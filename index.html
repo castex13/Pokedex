@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--STYLE-->
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    
+    <div class="container topPokedex">
+        <div class="row marginTop align-items-center justify-content-around">
+            <div class="col-12 col-md-6 mb-md-0 mb-3">
+                <div class="img-container d-flex justify-content-center align-items-center">
+                    <img src="./img/Logo-Pokemon-peque.png" alt="imagen pokemon" class="img-fluid" id="pokemon">
+                    <h3 id="namePokemon"></h3>
+                    <a id="stats" data-toggle="modal" data-target="#statModal">STATS</a>
+                    <!--MODAL-->
+                    <div class="modal fade" id="statModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modalTitle">Name: NoName</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body" id="modalBody">
+                              ...
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="select mx-auto">
+                    <img src="./img//select.png" alt="Select buttons" class="img-fluid">
+                    <button id="up" class="base-button"></button>
+                    <button id="down" class="base-button"></button>
+                    <button id="left" class="base-button"></button>
+                    <button id="right" class="base-button"></button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row mt-3 mt-md-5">
+            <div class="col-12 text-contenido">
+                <h1>POKEDEX.</h1>
+                <p>
+                    Todo entrenador pokemon necesita una guía que le permita identificar el pokemon que se encuentre en su viaje.
+                </p>
+                <p>
+                    Con esta guía podrá con las flechas de pantalla o teclado encontrar el pokemon deseado: Flecha derecha <span class="right align-middle"></span> inicia búsqueda, flecha izquierda <span class="left align-middle"></span> devuelve la búsqueda, flecha abajo <span class="down align-middle"></span> mira al pokemon por detrás,
+                    flecha arriba <span class="up align-middle"></span> mira al pokemon por delante.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="./js/index.js"></script>
+</body>
+</html>
